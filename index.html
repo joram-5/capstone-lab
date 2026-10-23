@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet facts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="dark">
+    <header class="header">
+        <img src="images/logo.png" alt="Planet logo" class="logo">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <img src="images/toggle.png" alt="" class="theme-icon">
+        </button>
+</header>
+
+    <section class="search" id="search-box">
+        <img src="images/Path.png" alt="" class="search-icon">
+        <input type="text" id="search-input" placeholder="Search planet name…">
+        <span id="error-text" class="error-text"  hidden>No results</span>
+        <button id="search-btn">Search</button>
+    </section>
+
+        <main>
+            <section class="planet-card">
+                <img src="images/earth.jpg" alt="Earth" id="planet-image" class="planet-image">
+            
+                <div class="planet-info">
+                    <h2 id="planet-name">Earth</h2>
+                    <p id="planet-type" class="planet-type">Terrestrial</p>
+                    <p id="planet-description" class="planet-description">
+                        The only known planet to support life, with liquid water on its surface.
+                    </p>
+        
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-label">Gravity</span>
+                        <span class="stat-value" id="planet-gravity">9.8</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Mass</span>
+                        <span class="stat-value" id="planet-mass">0.00315</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Period</span>
+                        <span class="stat-value" id="planet-period">365</span>
+                    </div>
+                </div>
+        
+                <div class="extra-stats">
+                    <p><img src="images/temp.png" alt="Temperature"> <span id="planet-temp"></span></p>
+                    <p><img src="images/moon.png" alt="Moons"> <span id="planet-moons"></span></p>
+                    <p><img src="images/Diameter info.png" alt="Diameter"> <span id="planet-diameter"></span></p>
+                    <p><img src="images/Company.png" alt="Distance from sun"> <span id="planet-distance"></span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="facts">
+            <h2>Planetary Facts at a Glance</h2>
+            <p>
+                Below is a comparative table of major planets in our solar system.
+                The data highlights key physical properties used by astronomers and researchers worldwide.
+            </p>
+            <h3>Data about the planets of our solar system (Planetary facts taken from NASA)</h3>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2"></th>
+                        <th>Name</th>
+                        <th>Mass (10<sup>24</sup>kg)</th>
+                        <th>Diameter (km)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Terrestrial -->
+                    <tr>
+                        <td rowspan="4" colspan="2">Terrestrial Planets</td>
+                        <td>Mercury</td>
+                        <td>0.330</td>
+                        <td>4,878</td>
+                    </tr>
+                    <tr>
+                        <td>Venus</td>
+                        <td>0.330</td>
+                        <td>4,878</td>
+                    </tr>
+                    <tr>
+                        <td>Earth</td>
+                        <td>0.330</td>
+                        <td>4,878</td>
+                    </tr>
+                    <tr>
+                        <td>Mars</td>
+                        <td>0.330</td>
+                        <td>4,878</td>
+                    </tr>
+        
+                    <!-- Jovian -->
+                    <tr>
+                        <td rowspan="4">Jovian Planets</td>
+                        <td rowspan="2">Gas Giants</td>
+                        <td>Jupiter</td>
+                        <td>0.330</td>
+                        <td>4,878</td>
+                    </tr>
+                    <tr>
+                        <td>Saturn</td>
+                        <td>0.330</td>
+                        <td>4,878</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Ice Giants</td>
+                        <td>Uranus</td>
+                        <td>0.330</td>
+                        <td>4,878</td>
+                    </tr>
+                    <tr>
+                        <td>Neptune</td>
+                        <td>0.330</td>
+                        <td>4,878</td>
+                    </tr>
+        
+                    <!-- Dwarf -->
+                    <tr>
+                        <td colspan="2">Dwarf Planets</td>
+                        <td>Pluto</td>
+                        <td>0.330</td>
+                        <td>4,878</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        </main>
+        <footer class="footer">
+            <div class="about">
+                <h3>About</h3>
+                <p><a href="https://github.com/joram-5/capstone-lab.git" target="_blank" rel="noopener noreferrer">Sylvester Joram</a></p>
+            </div>
+            <div class="credits">
+                <p>
+                    ©2026 Design by
+                    <a href="https://www.amakandukwu.com" target="_blank" rel="noopener noreferrer">Amaka N</a>
+                </p>
+                <p>Built by <a href="https://github.com/joram-5/capstone-lab.git" target="_blank" rel="noopener noreferrer">Sylvester Joram</a>. All rights reserved</p>
+                <p>
+                    <a href=" https://tsacademyonline.com/" target="_blank" rel="noopener noreferrer">TSAcademy</a>
+                </p>
+            </div>
+        </footer>
+</body>
+
+</html>
