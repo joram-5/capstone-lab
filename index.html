@@ -12,10 +12,11 @@
 </head>
 
 <body class="dark">
+    <div class="container">
     <header class="header">
         <img src="images/logo.png" alt="Planet logo" class="logo">
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-            <img src="images/toggle.png" alt="" class="theme-icon">
+            <img src="images/toggle.png" alt="" class="theme-icon" id="theme-icon">
         </button>
 </header>
 
@@ -53,10 +54,10 @@
                 </div>
         
                 <div class="extra-stats">
-                    <p><img src="images/temp.png" alt="Temperature"> <span id="planet-temp"></span></p>
-                    <p><img src="images/moon.png" alt="Moons"> <span id="planet-moons"></span></p>
-                    <p><img src="images/Diameter info.png" alt="Diameter"> <span id="planet-diameter"></span></p>
-                    <p><img src="images/Company.png" alt="Distance from sun"> <span id="planet-distance"></span></p>
+                    <p><img src="images/Temperature(1).png" alt="Temperature"> <span id="planet-temp">288</span></p>
+                    <p><img src="images/Half moon.png" alt="Moons"> <span id="planet-moons">1</span></p>
+                    <p><img src="images/Diameter info.png" alt="Diameter"> <span id="planet-diameter">12,756</span></p>
+                    <p><img src="images/Company.png" alt="Distance from sun"> <span id="planet-distance">149.6</span></p>
                 </div>
             </div>
         </section>
@@ -74,32 +75,32 @@
                     <tr>
                         <th colspan="2"></th>
                         <th>Name</th>
-                        <th>Mass (10<sup>24</sup>kg)</th>
+                        <th class="col-mass">Mass (10<sup>24</sup>kg)</th>
                         <th>Diameter (km)</th>
                     </tr>
                 </thead>
                 <tbody>
                     <!-- Terrestrial -->
-                    <tr>
+                    <tr data-planet="mercury">
                         <td rowspan="4" colspan="2">Terrestrial Planets</td>
                         <td>Mercury</td>
-                        <td>0.330</td>
+                        <td class="t-mass col-mass">0.330</td>
+                        <td class="t-diameter">4,878</td>
+                    </tr>
+                    <tr>
+                        <td data-planet="venus">Venus</td>
+                        <td class="t-mass col-mass">0.330</td>
                         <td>4,878</td>
                     </tr>
                     <tr>
-                        <td>Venus</td>
-                        <td>0.330</td>
-                        <td>4,878</td>
+                        <td data-planet="earth">Earth</td>
+                        <td class="t-mass col-mass">0.330</td>
+                        <td class="t-diameter">4,878</td>
                     </tr>
                     <tr>
-                        <td>Earth</td>
-                        <td>0.330</td>
-                        <td>4,878</td>
-                    </tr>
-                    <tr>
-                        <td>Mars</td>
-                        <td>0.330</td>
-                        <td>4,878</td>
+                        <td data-planet="mars">Mars</td>
+                        <td class="t-mass col-mass">0.330</td>
+                        <td class="t-diameter">4,878</td>
                     </tr>
         
                     <!-- Jovian -->
@@ -107,32 +108,32 @@
                         <td rowspan="4">Jovian Planets</td>
                         <td rowspan="2">Gas Giants</td>
                         <td>Jupiter</td>
-                        <td>0.330</td>
-                        <td>4,878</td>
+                        <td class="t-mass col-mass">0.330</td>
+                        <td class="t-diameter">4,878</td>
                     </tr>
                     <tr>
-                        <td>Saturn</td>
-                        <td>0.330</td>
-                        <td>4,878</td>
+                        <td data-planet="saturn">Saturn</td>
+                        <td class="t-mass col-mass">0.330</td>
+                        <td class="t-diameter">4,878</td>
                     </tr>
                     <tr>
                         <td rowspan="2">Ice Giants</td>
-                        <td>Uranus</td>
-                        <td>0.330</td>
-                        <td>4,878</td>
+                        <td data-planet="uranus">Uranus</td>
+                        <td class="t-mass col-mass">0.330</td>
+                        <td class="t-diameter">4,878</td>
                     </tr>
                     <tr>
-                        <td>Neptune</td>
-                        <td>0.330</td>
-                        <td>4,878</td>
+                        <td data-planet="neptune">Neptune</td>
+                        <td class="t-mass col-mass">0.330</td>
+                        <td class="t-diameter">4,878</td>
                     </tr>
         
                     <!-- Dwarf -->
                     <tr>
                         <td colspan="2">Dwarf Planets</td>
-                        <td>Pluto</td>
-                        <td>0.330</td>
-                        <td>4,878</td>
+                        <td data-planet="pluto">Pluto</td>
+                        <td class="t-mass col-mass">0.330</td>
+                        <td class="t-diameter">4,878</td>
                     </tr>
                 </tbody>
             </table>
@@ -154,6 +155,7 @@
                 </p>
             </div>
         </footer>
+        </div>
 </body>
 
 </html>

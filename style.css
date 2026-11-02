@@ -85,7 +85,7 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-    background: var(--white);
+    background: var(--card);
     border: 2px solid transparent;
     border-radius: 16px;
     padding: 10px 10px 10px 24px;
@@ -150,7 +150,7 @@ body {
 .planet-card {
     display: flex;
     gap: 48px;
-    background: var(--white);
+    background: var(--card);
     border-radius: 20px;
     padding: 48px;
     box-shadow: var(--shadow);
@@ -350,9 +350,11 @@ body.dark {
 }
 
 /* White logo and icons */
-body.dark .logo,
+body.dark .logo {
+    filter : invert(1);
+}
 body.dark .extra-stats img {
-    filter: invert(1);
+    filter: brightness(0) invert(1);
 }
 
 /* Toggle: lighten on hover instead of darkening */
