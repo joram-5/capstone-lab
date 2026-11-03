@@ -44,6 +44,8 @@ showPlanet(planets.find((p) => p.name === "Earth"));
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-btn");
 const errorText = document.getElementById("error-text");
+const planetCard = document.getElementById("planet-card");
+const noResultsCard = document.getElementById("no-results-card");
 
 function searchPlanet() {
   const query = searchInput.value.trim().toLowerCase();
@@ -51,9 +53,13 @@ function searchPlanet() {
 
   if (planet) {
     errorText.hidden = true;
+    noResultsCard.hidden = true;
+    planetCard.hidden = false;
     showPlanet(planet);
   } else {
     errorText.hidden = false;
+    noResultsCard.hidden = false;
+    planetCard.hidden = true;
   }
 }
 
@@ -97,4 +103,4 @@ themeToggle.addEventListener("click", () => {
 });
 
 // When the page opens, use the saved choice
-applyTheme(localStorage.getItem("theme") === "dark");
+applyTheme(localStorage.getItem("theme") === "dark");c

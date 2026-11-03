@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-
 <body class="dark">
     <div class="container">
     <header class="header">
@@ -21,14 +20,14 @@
 </header>
 
     <section class="search" id="search-box">
-        <img src="images/Path.png" alt="" class="search-icon">
+        <img src="images/Path.svg" alt="" class="search-icon">
         <input type="text" id="search-input" placeholder="Search planet name…">
         <span id="error-text" class="error-text"  hidden>No results</span>
         <button id="search-btn">Search</button>
     </section>
 
         <main>
-            <section class="planet-card">
+            <section class="planet-card" id="planet-card">
                 <img src="images/earth.jpg" alt="Earth" id="planet-image" class="planet-image">
             
                 <div class="planet-info">
@@ -54,11 +53,20 @@
                 </div>
         
                 <div class="extra-stats">
-                    <p><img src="images/Temperature(1).png" alt="Temperature"> <span id="planet-temp">288</span></p>
-                    <p><img src="images/Half moon.png" alt="Moons"> <span id="planet-moons">1</span></p>
-                    <p><img src="images/Diameter info.png" alt="Diameter"> <span id="planet-diameter">12,756</span></p>
-                    <p><img src="images/Company.png" alt="Distance from sun"> <span id="planet-distance">149.6</span></p>
+                    <p><img src="images/Temperature.svg" alt="Temperature"> <span id="planet-temp">288</span></p>
+                    <p><img src="images/Half moon.svg" alt="Moons"> <span id="planet-moons">1</span></p>
+                    <p><img src="images/Diameter.svg" alt="Diameter"> <span id="planet-diameter">12,756</span></p>
+                    <p><img src="images/Company.svg" alt="Distance from sun"> <span id="planet-distance">149.6</span></p>
                 </div>
+            </div>
+        </section>
+        <section class="planet-card no-results-card" id="no-results-card" hidden>
+            <div class="planet-info">
+                <h2>No results found</h2>
+                <p class="planet-description">
+                    We couldn't find any planets matching your search.
+                    please doublecheck the name and try again.
+                </p>
             </div>
         </section>
 
@@ -87,51 +95,51 @@
                         <td class="t-mass col-mass">0.330</td>
                         <td class="t-diameter">4,878</td>
                     </tr>
-                    <tr>
-                        <td data-planet="venus">Venus</td>
-                        <td class="t-mass col-mass">0.330</td>
-                        <td>4,878</td>
-                    </tr>
-                    <tr>
-                        <td data-planet="earth">Earth</td>
+                    <tr data-planet="venus">
+                        <td>Venus</td>
                         <td class="t-mass col-mass">0.330</td>
                         <td class="t-diameter">4,878</td>
                     </tr>
-                    <tr>
-                        <td data-planet="mars">Mars</td>
+                    <tr data-planet="earth">
+                        <td>Earth</td>
+                        <td class="t-mass col-mass">0.330</td>
+                        <td class="t-diameter">4,878</td>
+                    </tr>
+                    <tr data-planet="mars">
+                        <td>Mars</td>
                         <td class="t-mass col-mass">0.330</td>
                         <td class="t-diameter">4,878</td>
                     </tr>
         
                     <!-- Jovian -->
-                    <tr>
+                    <tr data-planet="jupiter">
                         <td rowspan="4">Jovian Planets</td>
                         <td rowspan="2">Gas Giants</td>
                         <td>Jupiter</td>
                         <td class="t-mass col-mass">0.330</td>
                         <td class="t-diameter">4,878</td>
                     </tr>
-                    <tr>
-                        <td data-planet="saturn">Saturn</td>
+                    <tr data-planet="saturn">
+                        <td>Saturn</td>
                         <td class="t-mass col-mass">0.330</td>
                         <td class="t-diameter">4,878</td>
                     </tr>
-                    <tr>
+                    <tr data-planet="uranus">
                         <td rowspan="2">Ice Giants</td>
-                        <td data-planet="uranus">Uranus</td>
+                        <td>Uranus</td>
                         <td class="t-mass col-mass">0.330</td>
                         <td class="t-diameter">4,878</td>
                     </tr>
-                    <tr>
-                        <td data-planet="neptune">Neptune</td>
+                    <tr data-planet="neptune">
+                        <td>Neptune</td>
                         <td class="t-mass col-mass">0.330</td>
                         <td class="t-diameter">4,878</td>
                     </tr>
         
                     <!-- Dwarf -->
-                    <tr>
+                    <tr data-planet="pluto">
                         <td colspan="2">Dwarf Planets</td>
-                        <td data-planet="pluto">Pluto</td>
+                        <td>Pluto</td>
                         <td class="t-mass col-mass">0.330</td>
                         <td class="t-diameter">4,878</td>
                     </tr>

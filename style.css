@@ -408,7 +408,9 @@ body.dark td[colspan] {
         padding: 40px;
         gap: 32px;
     }
-
+    .planet-card[hidden] {
+        display: none;
+    }
     .footer {
         gap: 24px;
     }
